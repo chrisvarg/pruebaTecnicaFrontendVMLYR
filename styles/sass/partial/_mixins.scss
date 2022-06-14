@@ -1,0 +1,175 @@
+@use "../partial/variable" as v;
+
+// ---------- mixins ----------
+
+@function get-opacity($color, $opacity) {
+    @return rgba($color, $opacity);
+}
+
+// calcula la relación de los subtitulos
+@mixin substitle($size) {
+	font-size: $size - 0.3;
+	// @include font-size($size);
+	// font-size: calculateRem($size);
+	// line-height: calculateRem($size)*1.5;
+}
+
+// calcula el tamaño de fuentes usando rem
+@function calculateRem($size) {
+	$remSize: calc($size / 16px);
+	@return calc($remSize) * 1rem;
+}
+
+// adapta el tamaño de las fuentes
+@mixin font-size($size) {
+	font-size: $size;
+	// font-size: calculateRem($size);
+	line-height: $size * 1.5;
+}
+
+// boton base
+@mixin buttomRound($fontSize, $color) {
+	background-color: $color;
+	// padding: 10px 15px;
+	font-size: $fontSize;
+	font-weight: 700;
+	color: v.$colorText;
+	border-radius: 3rem;
+	
+	.boton {
+        &__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            figure {
+                width: 49px;
+                height: 49px;
+                border-radius: 27px;
+                background-color: #19341a;
+
+                img {
+                    width: 10px;
+                    height: 20px;
+                    align-content: center;
+                    align-self: center;
+                    margin-top: 15px;
+                    margin-left: 20px;
+                }
+
+            }
+            &--text {
+                padding-left: 20px;
+                @include font-size(v.$text-size);
+            }
+        }
+    }
+	// &:hover {
+	// 	background-color: v.$colorTitle;
+	// 	color: v.$color-primary;
+	// }
+}
+
+@mixin buttom($fontSize, $color) {
+	background-color: $color;
+	// padding: 10px 15px;
+	font-size: $fontSize;
+	font-weight: 700;
+	color: v.$colorText;
+	border-radius: 3rem;
+	
+	.boton {
+        &__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            figure {
+                width: 49px;
+                height: 49px;
+                // border-radius: 27px;
+                background-color: #19341a;
+
+                img {
+                    width: 10px;
+                    height: 20px;
+                    align-content: center;
+                    align-self: center;
+                    margin-top: 15px;
+                    margin-left: 20px;
+                }
+
+            }
+            &--text {
+                padding-left: 20px;
+                @include font-size(v.$text-size);
+            }
+        }
+    }
+	// &:hover {
+	// 	background-color: v.$colorTitle;
+	// 	color: v.$color-primary;
+	// }
+}
+
+@mixin buttom2($fontSize, $color) {
+	background-color: $color;
+	// padding: 10px 15px;
+	font-size: $fontSize;
+	font-weight: 700;
+	color: v.$colorText;
+	border-radius: 3rem;
+	
+	.boton {
+        &__container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+
+            figure {
+                width: 75px;
+                height: 75px;
+                // border-radius: 27px;
+                background-color: #19341a;
+                padding-top: 12px;
+                padding-right: 14px;
+                
+
+                img {
+                    width: 10px;
+                    height: 20px;
+                    align-content: center;
+                    align-self: center;
+                    margin-top: 15px;
+                    margin-left: 20px;
+                }
+
+            }
+            &--text {
+                padding-left: 20px;
+                @include font-size(v.$text-size);
+            }
+        }
+    }
+	
+}
+
+@mixin backgroundGradient($url) {
+	background-image: linear-gradient(rgba(128, 188, 0, 0.87), rgba(128, 188, 0, 0.72)), url($url);
+	object-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+	// &:hover {
+	// 	background-color: v.$colorTitle;
+	// 	color: v.$color-primary;
+	// }
+}
+
+
+
+

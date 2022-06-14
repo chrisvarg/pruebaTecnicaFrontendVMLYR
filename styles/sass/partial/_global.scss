@@ -1,0 +1,53 @@
+
+/**
+    ---------- My Styles ----------
+*/
+@use '../partial/mixins' as m;
+@use '../partial/variable' as v;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: v.$colorText;
+    font-family: v.$font;
+    background-image: url(/css/img/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: v.$color-primary;
+}
+
+h2 {
+    @include m.font-size(v.$title-size);
+}
+
+h3  {
+    @include m.font-size(v.$subtitle-size)
+}
+
+p {
+    @include m.font-size(v.$text-size);
+}
+
+a {
+    color: v.$colorText;
+    display: inline-block;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    @include m.font-size(2.8rem);
+}
+

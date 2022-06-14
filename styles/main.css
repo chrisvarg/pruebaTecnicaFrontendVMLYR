@@ -1,0 +1,1452 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: "bebas neue";
+  src: url("../../assets/fonts/BebasNeue-Regular.woff2") format("woff2"), url("../../assets/fonts/BebasNeue-Regular.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "futura bold";
+  src: url("../../assets/fonts/FuturaStdBold.woff2") format("woff2"), url("../../assets/fonts/FuturaStdBold.woff") format("woff");
+  font-size: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "futura heavy";
+  src: url("../../assets/fonts/FuturaStdHeavy.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "futura book";
+  src: url("../../assets/fonts/FuturaStdBook.woff2") format("woff2"), url("../../assets/fonts/FuturaStdBook.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "futura light";
+  src: url("../../assets/fonts/FuturaStdLight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+/**
+    ---------- My Styles ----------
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #FFFFFF;
+  font-family: "futura book";
+  background-image: url(/css/img/fondo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #FFFFFF;
+}
+
+h2 {
+  font-size: 5rem;
+  line-height: 7.5rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+  line-height: 4.2rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+
+a {
+  color: #FFFFFF;
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  font-size: 2.8rem;
+  line-height: 4.2rem;
+}
+
+/* Media Queries Mixin
+**********************/
+.header {
+  /*&__logo {
+      figure {
+          height: 3rem;
+
+          // ---------- RESPONSIVE DESING: desktop ----------
+          @include br.media(desktop-s) {
+              height: 3.5rem;
+          }
+
+          img {
+              height: 100%;
+          }
+
+          a {
+              height: 100%;
+          }
+      }
+
+      .img__name {
+          display: none;
+
+          // ---------- RESPONSIVE DESING: TABLET ----------
+          @include br.media(desktop-s) {
+              display: inline-block;
+              margin-left: 2rem;
+          }
+      }
+  }*/
+}
+.header a {
+  display: block;
+}
+.header__container {
+  align-items: center;
+  background-color: #19341a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 6rem;
+  padding: 0 2rem;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+@media only screen and (min-width: 992px) {
+  .header__container {
+    margin: 0 auto;
+    display: block;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+  }
+}
+.header__utility {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .header__utility {
+    background-color: #09190b;
+    display: flex;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px solid #80bc00;
+  }
+  .header__utility a {
+    font-family: "futura book";
+    color: white;
+  }
+}
+.header__menu {
+  height: 3rem;
+  width: 3rem;
+}
+@media only screen and (min-width: 992px) {
+  .header__menu {
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
+
+.utility__contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.utility__contact .contact__link {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+.utility__contact .contact__link--img {
+  width: 21px;
+  height: 21px;
+  margin-right: 10px;
+}
+.utility__contact .contact__link--img img {
+  width: 100%;
+  height: 100%;
+}
+.utility__social {
+  display: flex;
+  align-items: center;
+}
+.utility__social p {
+  padding: 0.7rem;
+  padding-right: 4rem;
+  font-family: "futura heavy";
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
+.utility__social .social {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.utility__social .social__icon {
+  height: 30px;
+  width: 30px;
+}
+.utility__social .social__icon--img {
+  height: 100%;
+}
+
+#menu__burguer {
+  display: none;
+}
+#menu__burguer:checked ~ .menu__content {
+  height: 100%;
+  padding-bottom: 102rem;
+  padding-top: 53rem;
+  position: fixed;
+  transition: all 1s;
+  width: 100vw;
+}
+@media only screen and (min-width: 992px) {
+  #menu__burguer:checked ~ .menu__content {
+    height: auto;
+    padding: 0;
+    position: static;
+    transition: none;
+    width: auto;
+  }
+}
+
+.burguer__container {
+  height: 3rem;
+  position: absolute;
+  width: 3rem;
+  z-index: 1;
+}
+.burguer__container i {
+  color: #FFFFFF;
+  font-size: 2.3rem;
+  padding: 0.4rem 0.5rem 0.4rem 0.5rem;
+  transition: all 0.5s;
+}
+.burguer__container i:hover {
+  background-color: #80bc00;
+}
+@media only screen and (min-width: 992px) {
+  .burguer__container {
+    display: none;
+    height: auto;
+    position: static;
+    width: auto;
+  }
+}
+
+.menu__content {
+  background-color: #19341a;
+  left: 0;
+  margin-top: -47rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: all 0.6s;
+}
+@media only screen and (min-width: 992px) {
+  .menu__content {
+    background-color: transparent;
+    margin: 0;
+    position: static;
+    width: auto;
+  }
+}
+.menu__list {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 992px) {
+  .menu__list {
+    flex-direction: row;
+  }
+}
+.menu__search {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .menu__search {
+    display: block;
+  }
+  .menu__search img {
+    position: relative;
+    right: 3.6rem;
+    width: 27px;
+  }
+  .menu__search__form {
+    display: flex;
+  }
+  .menu__search input[type=search] {
+    background-color: rgba(197, 197, 197, 0);
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    height: 30px;
+    padding-left: 5px;
+    font-family: "futura heavy";
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #FFFFFF;
+  }
+  .menu__search input[type=search]:focus-visible {
+    outline: none;
+    border-bottom: 1px solid rgb(128, 188, 0);
+    text-align: left;
+  }
+  .menu__search .search__form:focus-visible {
+    border-bottom: 1px solid rgb(128, 188, 0);
+  }
+}
+
+.list__item {
+  height: 6rem;
+  list-style: none;
+  width: 100%;
+}
+.list__item img {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .list__item img {
+    width: 10px;
+    display: inline;
+  }
+}
+.list__item a {
+  font-size: 2rem;
+  font-weight: 700;
+  height: 100%;
+  padding-top: 2rem;
+  text-align: center;
+  width: 100%;
+}
+.list__item a:hover {
+  background-color: #80bc00;
+  transition: all 1s;
+}
+@media only screen and (min-width: 992px) {
+  .list__item a:hover {
+    background-color: transparent;
+    color: #80bc00;
+    text-decoration: underline;
+    transition: all 1s;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .list__item a {
+    font-size: 1.4rem;
+    height: 100%;
+    padding: 0px;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-family: "futura heavy";
+    color: white;
+    font-size: 18px;
+    display: flex;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .list__item {
+    height: auto;
+    transition: all 1s;
+    width: auto;
+    padding: 10px;
+  }
+  .list__item:hover {
+    transform: scale(1.2);
+  }
+}
+
+.main__background {
+  padding-top: 6rem;
+}
+@media only screen and (min-width: 992px) {
+  .main__background {
+    padding: 0;
+  }
+}
+.main__background--image {
+  background-image: url("/assets/images/aliado-agro-blur.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  height: 45rem;
+  padding: 0;
+  padding-top: 0px;
+  padding-top: 4.4rem;
+}
+.main__background--image-img {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .main__background--image {
+    background-image: none;
+    padding: 0;
+    height: 100%;
+  }
+  .main__background--image img {
+    display: inline;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+  }
+}
+.main__background--card {
+  width: 90vw;
+  max-width: 60.2rem;
+  margin: 0 auto;
+  position: relative;
+  bottom: -68px;
+  background-color: brown;
+}
+@media only screen and (min-width: 992px) {
+  .main__background--card {
+    width: 30%;
+    height: 60.2rem;
+    position: absolute;
+    bottom: auto;
+    top: 8.6rem;
+    margin-top: 5rem;
+    padding: 4.4rem;
+    padding-left: 5.5rem;
+    margin-left: 50px;
+    padding-top: 6rem;
+    max-height: 529px;
+    min-width: 375px;
+    min-height: 469px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main__background--card .card__background {
+    max-width: 4.4rem;
+  }
+}
+.main__background--card .card__background--tittle {
+  color: #80bc00;
+  font-size: 26px;
+  line-height: 4.6rem;
+  text-align: center;
+  background-color: gray;
+  font-family: "futura heavy";
+}
+@media only screen and (min-width: 992px) {
+  .main__background--card .card__background--tittle {
+    max-width: 25.4rem;
+    text-align: left;
+    font-size: 55px;
+    line-height: 5.2rem;
+  }
+}
+.main__background--card .card__background--text {
+  margin-top: 2rem;
+  text-align: justify;
+}
+@media only screen and (min-width: 992px) {
+  .main__background--card .card__background--text {
+    display: block;
+    margin-top: 2.2rem;
+    font-size: 2.8rem;
+  }
+}
+.main__background--card .card__background--boton {
+  background-color: #80bc00;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  width: 184px;
+  border-radius: 20rem;
+  height: 50px;
+  width: 207px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-family: "futura heavy";
+}
+.main__background--card .card__background--boton .boton__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.main__background--card .card__background--boton .boton__container figure {
+  width: 49px;
+  height: 49px;
+  border-radius: 27px;
+  background-color: #19341a;
+}
+.main__background--card .card__background--boton .boton__container figure img {
+  width: 10px;
+  height: 20px;
+  align-content: center;
+  align-self: center;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.main__background--card .card__background--boton .boton__container--text {
+  padding-left: 20px;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+@media only screen and (min-width: 992px) {
+  .main__background--card .card__background--boton {
+    position: relative;
+    top: 47px;
+    left: 130px;
+  }
+}
+.main .background__card--text {
+  display: none;
+}
+.main .backgroundsolution img {
+  width: 50px;
+}
+.main .background__image {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .main .background__image {
+    display: inline;
+    object-fit: cover;
+    object-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    margin-top: 60px;
+    height: auto;
+  }
+}
+.main .background__image--content img {
+  width: 100%;
+}
+.main .solution__section {
+  background-color: #80bc00;
+  padding: 3rem 4.5rem;
+}
+.main .solution__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  gap: 3.8rem;
+  margin: 0 auto;
+}
+.main .solution__list--image {
+  width: 17rem;
+  height: 100%;
+  margin-right: 2.5rem;
+}
+.main .solution__list--image img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.main .solution__list--text h3 {
+  font-family: "futura heavy";
+}
+.main .solution__boton {
+  background-color: #19341a;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  border-radius: 3rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  justify-content: space-between;
+  width: 140px;
+}
+.main .solution__boton .boton__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.main .solution__boton .boton__container figure {
+  width: 49px;
+  height: 49px;
+  background-color: #19341a;
+}
+.main .solution__boton .boton__container figure img {
+  width: 10px;
+  height: 20px;
+  align-content: center;
+  align-self: center;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.main .solution__boton .boton__container--text {
+  padding-left: 20px;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+.main .solution__boton--text {
+  padding-left: 15px;
+  font-family: "futura heavy";
+  color: #FFFFFF;
+}
+.main .solution__boton--image {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0px;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  border-left: 0.1rem solid white;
+}
+.main .solution__boton--image img {
+  width: 6px;
+  height: 12px;
+  margin-top: 10px;
+}
+.main .solution__boton .boton__container {
+  display: flex;
+  justify-content: space-between;
+}
+.main .solution__items {
+  display: flex;
+  width: 370px;
+  align-items: center;
+}
+.main__presentation {
+  padding: 3rem 4.5rem;
+}
+@media only screen and (min-width: 992px) {
+  .main__presentation--testi {
+    display: flex;
+    width: 60%;
+  }
+}
+.main__presentation .presentation__content {
+  max-width: 33rem;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 992px) {
+  .main__presentation .presentation__content {
+    display: flex;
+    max-width: none;
+    justify-content: space-around;
+  }
+}
+.main__presentation .presentation__img {
+  width: 150px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 992px) {
+  .main__presentation .presentation__img {
+    width: 40%;
+  }
+}
+.main__presentation .presentation__img img {
+  width: 100%;
+}
+.main__presentation .presentation__text {
+  color: rgb(114, 113, 118);
+  margin-top: 3rem;
+}
+@media only screen and (min-width: 992px) {
+  .main__presentation .presentation__text {
+    width: 60%;
+  }
+}
+.main__presentation .presentation__text span {
+  font-family: "futura bold";
+  font-weight: bold;
+}
+.main__presentation .presentation__info {
+  margin-top: 3rem;
+}
+.main__presentation .presentation__info .info__items {
+  margin: 0 auto;
+  padding: 10px;
+  border-bottom: 1px solid #727176;
+}
+@media only screen and (min-width: 992px) {
+  .main__presentation .presentation__info .info__items {
+    width: auto;
+  }
+}
+.main__presentation .presentation__info .info__items--link {
+  display: flex;
+  text-align: justify;
+  color: #727176;
+  font-family: "futura heavy";
+}
+.main__presentation .presentation__info .info__items--content {
+  width: 30px;
+  margin-right: 20px;
+}
+.main__notice {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.main__notice .notice__see {
+  text-align: right;
+}
+.main__notice .card__item--tittle {
+  font-family: "futura heavy";
+  font-size: 4.4rem;
+  line-height: 6.6rem;
+}
+.main__notice .card__item--text {
+  font-family: "futura book";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 3rem;
+  margin-bottom: 15px;
+}
+.main__notice .card__item--read {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.main__notice .card__item--read-img {
+  width: 18px;
+  height: 12px;
+}
+.main__notice .card__item--category {
+  padding: 0.5rem 1.2rem;
+  border: 1px solid #FFFFFF;
+}
+.main__notice .card__content {
+  background-color: #80bc00;
+  padding: 10rem 3rem 3rem 3rem;
+}
+.main__notice .card__background1 {
+  background-image: linear-gradient(rgba(128, 188, 0, 0.87), rgba(128, 188, 0, 0.72)), url("/assets/images/monomeros-online-1.jpg");
+  object-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.main__notice .card__background2 {
+  background-image: linear-gradient(rgba(128, 188, 0, 0.87), rgba(128, 188, 0, 0.72)), url("/assets/images/monomeros-online-2.jpg");
+  object-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.main__notice .card__background3 {
+  background-image: linear-gradient(rgba(128, 188, 0, 0.87), rgba(128, 188, 0, 0.72)), url("/assets/images/monomeros-online-3.jpg");
+  object-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.main__notice .card__title h2 {
+  margin: 0 auto;
+  color: #19341a;
+}
+.main__notice .card__title span {
+  color: #80bc00;
+}
+.main__notice .card__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.main__notice .card__big--image img {
+  width: 100%;
+}
+.main__notice .card__big--color {
+  color: rgb(63, 62, 62);
+}
+.main__brand {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.main__brand .brand__service {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.main__brand .brand__service--img img {
+  width: 100%;
+}
+.main__brand .brand__title h2 {
+  margin: 0 auto;
+  color: #19341a;
+}
+.main__brand .brand__title span {
+  color: #80bc00;
+}
+.main__brand .more__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.main__brand .more__item--portada {
+  background: rgb(128, 188, 0);
+  background: -moz-linear-gradient(left, rgb(128, 188, 0) 0%, rgb(25, 52, 26) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgb(128, 188, 0)), color-stop(100%, rgb(25, 52, 26)));
+  background: -webkit-linear-gradient(left, rgb(128, 188, 0) 0%, rgb(25, 52, 26) 100%);
+  background: -o-linear-gradient(left, rgb(128, 188, 0) 0%, rgb(25, 52, 26) 100%);
+  background: -ms-linear-gradient(left, rgb(128, 188, 0) 0%, rgb(25, 52, 26) 100%);
+  background: linear-gradient(to right, rgb(128, 188, 0) 0%, rgb(25, 52, 26) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#80bc00", endColorstr="#19341a", GradientType=1 );
+  width: 15rem;
+  height: 15rem;
+  border-radius: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__brand .more__item--portada img {
+  border: 0.7rem solid white;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 30rem;
+}
+.main__brand .more .boton__container {
+  display: flex;
+  justify-content: space-between;
+  min-width: 23.6rem;
+}
+.main__brand .more__boton {
+  background-color: #80bc00;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  border-radius: 3rem;
+}
+.main__brand .more__boton .boton__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.main__brand .more__boton .boton__container figure {
+  width: 49px;
+  height: 49px;
+  background-color: #19341a;
+}
+.main__brand .more__boton .boton__container figure img {
+  width: 10px;
+  height: 20px;
+  align-content: center;
+  align-self: center;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.main__brand .more__boton .boton__container--text {
+  padding-left: 20px;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+.main__brand .more__boton--text {
+  color: white;
+  padding-left: 15px;
+  font-family: "futura heavy";
+}
+.main__brand .more__boton--image {
+  width: 4rem;
+  height: 4rem;
+}
+.main__brand .more__boton--image img {
+  width: 1rem;
+  height: 2rem;
+  margin-top: 1.6rem;
+  margin-left: 2rem;
+}
+.main__banner .banner {
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "bebas neue";
+  align-items: center;
+  background-color: #80bc00;
+  background-color: brown;
+}
+@media only screen and (min-width: 992px) {
+  .main__banner .banner {
+    width: 90vw;
+  }
+}
+.main__banner .banner__tittle {
+  width: 35%;
+}
+.main__banner .banner__tittle--text span {
+  color: #19341a;
+}
+.main__banner p {
+  font-size: 5rem;
+  color: #19341a;
+}
+.main__banner figure {
+  width: 65%;
+}
+.main__banner img {
+  display: block;
+  width: 100%;
+}
+.main__appointment {
+  padding: 4.5rem 3rem;
+  background-color: #80bc00;
+}
+.main__appointment .appointment {
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  .main__appointment .appointment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.main__appointment .appointment__tittle {
+  font-size: 2.3rem;
+  font-family: "futura heavy";
+}
+@media only screen and (min-width: 992px) {
+  .main__appointment .appointment__tittle {
+    font-size: 4.2rem;
+  }
+}
+.main__appointment .appointment__boton {
+  background-color: #19341a;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  border-radius: 3rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  display: flex;
+  line-height: 2.1rem;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  border-radius: 0px;
+  width: 70%;
+  max-width: 60rem;
+}
+.main__appointment .appointment__boton .boton__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.main__appointment .appointment__boton .boton__container figure {
+  width: 75px;
+  height: 75px;
+  background-color: #19341a;
+  padding-top: 12px;
+  padding-right: 14px;
+}
+.main__appointment .appointment__boton .boton__container figure img {
+  width: 10px;
+  height: 20px;
+  align-content: center;
+  align-self: center;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.main__appointment .appointment__boton .boton__container--text {
+  padding-left: 20px;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+@media only screen and (min-width: 992px) {
+  .main__appointment .appointment__boton {
+    margin: 0 auto;
+    width: 30%;
+  }
+  .main__appointment .appointment__boton h3 {
+    font-size: 4.2rem;
+  }
+}
+.main__appointment .appointment__boton--image {
+  background-color: brown;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-left: 1px solid white;
+}
+.main__appointment .appointment__boton img {
+  width: 0.6rem;
+  height: 1.2rem;
+  margin-top: 1rem;
+}
+.main__award {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  padding: 4.5rem 3rem;
+}
+.main__award .award__tittle {
+  font-family: "futura heavy";
+  font-size: 5rem;
+  line-height: 7.5rem;
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  .main__award .award__tittle {
+    font-size: 8rem;
+    line-height: 12rem;
+    text-align: left;
+  }
+}
+.main__award .award__tittle h2 {
+  font-size: 3.4rem;
+  color: #19341a;
+}
+@media only screen and (min-width: 992px) {
+  .main__award .award__tittle h2 {
+    font-size: 7rem;
+  }
+}
+.main__award .award__list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+@media only screen and (min-width: 992px) {
+  .main__award .award__list {
+    gap: 4rem;
+    margin: 7rem;
+  }
+}
+.main__award .award__list--items img {
+  width: 100%;
+}
+
+.footer {
+  background-color: #19341a;
+}
+.footer__container {
+  padding: 4.5rem 3rem;
+}
+.footer__main {
+  max-width: 33rem;
+  margin: 0 auto;
+  padding: 4.5rem 3rem;
+  padding-bottom: 0;
+}
+.footer__main--list {
+  margin-bottom: 4rem;
+}
+.footer__main--tittle, .footer__main--company {
+  text-align: center;
+}
+.footer__main--tittle {
+  color: #80bc00;
+}
+.footer__main--company {
+  margin: 3rem 0;
+  font-family: "futura heavy";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.footer__main--item {
+  display: flex;
+  margin-top: 1.5rem;
+}
+.footer__main--item img {
+  width: 12px;
+  height: 16px;
+  margin-right: 1rem;
+}
+.footer__main--item p, .footer__main--item a {
+  font-family: "futura book";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.footer__main--item .phone-icon {
+  width: 1.6rem;
+  height: 1.5rem;
+}
+.footer__main--item .email-icon {
+  width: 1.4rem;
+  height: 1rem;
+}
+.footer__main .politics {
+  margin-bottom: 0;
+}
+.footer__main .social {
+  display: block;
+}
+.footer__main .social__list {
+  display: flex;
+  margin-bottom: 0;
+}
+.footer__main .social__list a {
+  width: 3.8rem;
+  height: 3.8rem;
+}
+.footer__main .social__list img {
+  width: 100%;
+  height: 100%;
+}
+.footer__main .social__item {
+  margin-left: 0.6rem;
+}
+.footer .copyright {
+  margin: 0 auto;
+  height: 5rem;
+  background-color: rgb(13, 26, 13);
+}
+.footer .copyright p {
+  text-align: center;
+  height: 100%;
+  font-family: "futura light";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding: 1.4rem;
+}
+@media only screen and (min-width: 992px) {
+  .footer__main {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 90%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

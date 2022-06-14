@@ -1,0 +1,421 @@
+@use '../partial/variable' as v;
+@use '../partial/mixins' as m;
+@use '../partial/breakpoint' as br;
+
+.header {
+
+
+    a{
+        display: block;
+    }
+
+    &__container {
+
+        align-items: center;
+        background-color: v.$color-secundary;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 6rem;
+        padding: 0 2rem;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+
+        // ---------- RESPONSIVE DESING: TABLET ----------
+        // @include br.media(tablet) {
+        //     height: 6rem;
+        // }
+
+        // ---------- RESPONSIVE DESING: desktop ----------
+        @include br.media(desktop-s) {
+            // max-width: 125.8rem;
+            margin: 0 auto;
+            display: block;
+            padding: 0;
+            // width: 90%;
+            background-color: transparent;
+            position: relative;
+        }
+    }
+
+    &__utility {
+        
+
+        display: none;
+
+        // ---------- RESPONSIVE DESING: desktop ----------
+        @include br.media(desktop-s) {
+            background-color: #09190b;
+            display: flex;
+            height: 60px;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 3px solid #80bc00;
+
+            a {
+                font-family: v.$font;
+                color:white;
+            }
+
+
+            // transition: all 1s;
+
+            // a => transition: all 0.5s;
+            // a: hover => 
+            // background-color: transparent;
+            // color: #80bc00;
+            // text-decoration: underline;
+            // transition: all 1s;
+
+        }
+    }
+
+    /*&__logo {
+        figure {
+            height: 3rem;
+
+            // ---------- RESPONSIVE DESING: desktop ----------
+            @include br.media(desktop-s) {
+                height: 3.5rem;
+            }
+
+            img {
+                height: 100%;
+            }
+            
+            a {
+                height: 100%;
+            }
+        }
+
+        .img__name {
+            display: none;
+
+            // ---------- RESPONSIVE DESING: TABLET ----------
+            @include br.media(desktop-s) {
+                display: inline-block;
+                margin-left: 2rem;
+            }
+        }
+    }*/
+
+    &__menu {
+        height: 3rem;
+        width: 3rem;
+
+        //---------- RESPONSIVE DESING: TABLET ----------
+         @include br.media(desktop-s) {
+            width: auto;
+            // height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 50px;
+        }
+    }
+    
+}
+
+.utility {
+    &__contact{
+        // background-color: goldenrod;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        //phone icono => 21, 21
+        // telefono = Futura Std Book: 17,48
+
+        .contact {
+            
+            &__link {
+                // background-color: blueviolet;
+                display: flex;
+                align-items: center;
+                margin-right: 50px;
+
+
+                &--img {
+                    width: 21px;
+                    height: 21px;
+                    margin-right: 10px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            
+            // &__email {
+            //     background-color: green;
+            //     display: flex;
+            // }
+        }
+    }
+
+    &__social {
+        // background-color: gray;
+        display: flex;
+        align-items: center;
+
+        p {
+            padding: 0.7rem;
+            padding-right: 4rem;
+            font-family: v.$font-heavy;
+            @include m.font-size(1.4rem);
+            // font-size: 14px;
+            color: white;
+            text-align: center;
+            letter-spacing: 0.5rem;
+        }
+
+        .social {
+            // background-color: cadetblue;
+            display: flex;
+            align-items: center;
+            height: 30px;
+            list-style: none;
+            flex-wrap: wrap;
+            gap: 5px;
+
+            
+            
+            &__icon {
+                height: 30px;
+                width: 30px;
+                &--img{
+                    height: 100%;
+                }
+            }
+
+        // logo => 30 x 30
+        // separación 5px
+        // distancia con texto 40px
+
+
+        }
+    }
+}
+
+#menu__burguer {
+    display: none;
+
+    &:checked ~ .menu__content {
+        height: 100%;
+        padding-bottom: 102rem;
+        padding-top: 53rem;
+
+        position: fixed;
+        transition:all 1s;
+        width: 100vw;
+
+         // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(desktop-s) {
+            height: auto;
+            padding: 0;
+            position: static;
+            transition: none;
+            width: auto;
+        }
+    }
+}
+
+.burguer__container {
+    height: 3rem;
+    position: absolute;
+    width: 3rem;
+    z-index: 1;
+    
+    
+    i {
+        color: v.$colorText;
+        font-size: 2.3rem;
+        padding: .4rem .5rem .4rem .5rem ;
+        transition: all 0.5s;
+
+        &:hover {
+            background-color: v.$colorTitle;
+
+        }
+    }
+
+     // ---------- RESPONSIVE DESING: TABLET ----------
+     @include br.media(desktop-s) {
+        display: none;
+        height: auto;
+        position: static;
+        width: auto;
+    }
+}
+
+.menu {
+
+    &__content {
+        background-color: v.$color-secundary;
+        left: 0;
+        margin-top: -47rem;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transition: all 0.6s;
+
+         // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(desktop-s) {
+            background-color: transparent;
+            // height: 100%;
+            margin: 0;
+            position: static;
+            width: auto;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+
+        // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(desktop-s) {
+            flex-direction: row;
+            // align-items: center;
+            // height: 100%;
+        }
+    }
+
+    &__search {
+        display: none;
+        
+        // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(desktop-s) {
+            
+            display: block;
+
+            img {
+                position: relative;
+                right: 3.6rem;
+                width: 27px;
+            }
+            
+            &__form {
+                display: flex;
+            }
+
+            input[type="search"] {
+                background-color: rgba(197, 197, 197, 0);
+                border: none;
+                border-bottom: 1px solid rgba(255, 255, 255);
+                height: 30px;
+                // padding-left: 1px;
+                padding-left: 5px;
+                font-family: v.$font-heavy;
+                @include m.font-size(v.$text-size);
+                color: v.$colorText;
+            }
+    
+            input[type="search"]:focus-visible {
+                outline: none;
+                border-bottom: 1px solid rgb(128, 188, 0);
+                text-align: left;
+            }
+    
+            .search__form {
+                // background-color: rgba(197, 197, 197, 0.1);
+                // border-bottom: 1px solid rgba(255, 255, 255);
+                
+
+                &:focus-visible {
+                    border-bottom: 1px solid rgb(128, 188, 0);
+
+                }
+
+                // display: flex;
+            }   
+        }
+
+
+    }
+
+}
+
+.list {
+
+    &__item {
+        height: 6rem;
+        list-style: none;
+        width: 100%;
+        
+        img {
+            display: none;
+            @include br.media(desktop-s) {
+                width: 10px;
+                display: inline;
+            }
+        }
+
+        a {
+            font-size: 2rem;
+            font-weight: 700;
+            height: 100%;
+            padding-top: 2rem;
+            text-align: center;
+            width: 100%;
+
+            
+
+            &:hover {
+                background-color: v.$colorTitle;
+                transition: all 1s;
+
+                 // ---------- RESPONSIVE DESING: TABLET ----------
+                @include br.media(desktop-s) {
+                    background-color: transparent;
+                    color: v.$colorTitle;
+                    text-decoration: underline;
+                    transition: all 1s;
+                }
+            }
+
+            // ---------- RESPONSIVE DESING: TABLET ----------
+            @include br.media(desktop-s) {
+                font-size: 1.4rem;
+                height: 100%;
+                padding: 0px;
+                transition: all 0.5s;
+                display: flex;
+                justify-content: center;
+                font-size: 1.8rem;
+
+                font-family: "futura heavy";
+                color: white;
+                font-size: 18px;
+                display: flex;
+              
+            }
+
+            // ---------- RESPONSIVE DESING: desktop ----------
+            // @include br.media(desktop-s) {
+            // }
+        }
+
+        // p {
+        //     @include br.media(desktop-s) {
+        //         @include m.font-size(v.$text-size);
+        //     } 
+        // }
+        // ---------- RESPONSIVE DESING: TABLET ----------
+        @include br.media(desktop-s) {
+           height: auto;
+            transition: all 1s;
+            &:hover {
+                transform: scale(1.2);
+            }
+            width: auto;
+            padding: 10px;
+
+        }
+    }
+}
+
+
+
